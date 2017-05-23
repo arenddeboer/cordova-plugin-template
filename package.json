@@ -8,5 +8,9 @@
       "ios",
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arenddeboer/cordova-plugin-template"
+  },
   "description": "A starting point for a Cordova Plugin"
 }
