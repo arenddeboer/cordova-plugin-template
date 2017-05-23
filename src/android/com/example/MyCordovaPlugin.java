@@ -12,6 +12,9 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import android.os.Build;
+import android.webkit.WebView;
+
 import android.util.Log;
 
 import java.util.Date;
@@ -23,6 +26,9 @@ public class MyCordovaPlugin extends CordovaPlugin {
     super.initialize(cordova, webView);
 
     Log.d(TAG, "Initializing MyCordovaPlugin");
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        WebView.setWebContentsDebuggingEnabled(true);
+    }
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
