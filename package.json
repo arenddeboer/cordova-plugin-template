@@ -5,7 +5,7 @@
     "id": "cordova-plugin-template",
     "platforms": [
       "android",
-      "ios",
+      "ios"
     ]
   },
   "repository": {
